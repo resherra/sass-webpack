@@ -1,3 +1,4 @@
+import "../scss/style.scss"
 import isEmail from 'validator/lib/isEmail'
 import doubleMe from '../app/doubleMe'
 
@@ -7,14 +8,8 @@ import doubleMe from '../app/doubleMe'
 console.log(isEmail(`john@gmail.com`))
 console.log(doubleMe(100))
 
-// testing hot modules replacement
-
-document.querySelector(`h1`).style.color = `lightblue`
-
-
 // enabling hot modules replacement
 
 if (module.hot) {
     module.hot.accept()
-
 }
